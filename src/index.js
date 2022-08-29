@@ -19,6 +19,10 @@ app.get("/", async(req, res) => {
 
  
 app.use("/topwatch", TopWatch)
+
+if(process.env.NODE_ENV == "production"){
+    app.use(express.static("Boat-LifeStyle/build"))
+}
  
 
 module.exports = app
