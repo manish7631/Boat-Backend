@@ -1,7 +1,7 @@
 const express = require("express")
  
 
-const topWatch = require("./controllers/TopWatchController")
+const TopWatch = require("./controllers/TopWatchController")
 
  
 
@@ -18,7 +18,7 @@ app.get("/", async(req, res) => {
 })
 
  
-app.use("/topwatch", topWatch)
+app.use("/topwatch", TopWatch)
  
 
 module.exports = app

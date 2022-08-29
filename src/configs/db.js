@@ -2,7 +2,7 @@ let mongoose = require("mongoose");
 
 const connect = () => {
     return mongoose.connect( 
-        "mongodb://localhost:27017/Boat"
+        "mongodb+srv://root:root@cluster0.zyjnrl8.mongodb.net/Boat"
     );
 };
 
